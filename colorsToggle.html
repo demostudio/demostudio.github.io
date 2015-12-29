@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Colors Toggle</title>
+    <style>
+        textarea {
+            width: 300px;
+            height: 200px;
+        }
+        
+        textarea.tan {
+            background: tan;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="colorsToggle">Tan background</label>
+    <input type="checkbox" id="colorsToggle">
+    <textarea id="textField">Edit me!</textarea>
+    <script>
+        document.getElementById('colorsToggle').onchange = function() {
+            document.getElementById('textField').classList.toggle('tan');
+        };
+    </script>
+</body>
+
+</html>
