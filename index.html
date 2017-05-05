@@ -2,75 +2,112 @@
 <html lang="en">
 
 <head>
+<base href="http://demostudio.github.io/">
   <meta charset="UTF-8">
   <meta name="description" content="View demos that showcase what HTML, CSS, and JavaScript can do">
   <title>Demo Studio</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    
-    body > * {
-      padding: 8px;
-    }
-    
-    header {
-      background: linear-gradient(#999, #333);
-    }
-    
-    h1,
-    footer * {
-      color: #FFF;
-    }
-    
-    h1,
-    address {
-      text-align: center;
-    }
-    
-    main {
-      font: 10pt Arial;
-    }
-    
-    main * {
-      color: #333;
-    }
-    
-    a {
-      outline: 0;
-    }
-    
-    a:hover,
-    a:focus {
-      text-decoration: none;
-    }
-    
-    li a:first-child {
-      font-weight: bold;
-      margin-right: 2em;
-    }
-    
-    footer {
-      background: #333;
-    }
-  </style>
+  <link rel="icon" href="favicon.ico">
+<style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body > *,
+tr > * {
+  padding: 1em;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(#999, #333);
+}
+
+header img {
+  width: 64px;
+  height: 64px;
+  vertical-align: bottom;
+}
+
+header h1 {
+  font-size: 1.5em;
+  font-family: 'Times New Roman';
+  color: #FFF;
+  text-shadow: 0 0.125em #000;
+  letter-spacing: 0.1em;
+}
+
+a {
+  outline: 0;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+table {
+  margin: 1em auto;
+  border-collapse: collapse;
+  font-family: Arial;
+  table-layout: fixed;
+  width: 65%;
+}
+
+tbody tr * {
+  color: #333;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #F2F2F2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #E6E6E6;
+}
+
+thead,
+footer {
+  text-align: center;
+  background: #333;
+  color: #FFF;
+  letter-spacing: 0.1em;
+}
+
+footer a {
+  color: inherit;
+}
+</style>
 </head>
 
 <body>
   <header>
+    <img src="logo.png" alt="Logo">
     <h1>Demo Studio</h1>
   </header>
   <main>
-    <ul>
-      <li><a href="colorsToggle.html" title="Colors Toggle">Colors Toggle</a>See: <a href="http://stackoverflow.com/questions/34507610/checkbox-toggle-in-chrome-and-opera" title="Checkbox toggle in Chrome and Opera">Checkbox toggle in Chrome and Opera</a></li>
-      <li><a href="text-indent.html" title="Text Indent">Text Indent</a>See: <a href="https://www.sitepoint.com/community/t/dcode-understanding-css-positioning/231154/39" title="dCode_Understanding CSS Positioning - HTML &amp; CSS - The SitePoint Forums">dCode_Understanding CSS Positioning - HTML &amp; CSS - The SitePoint Forums</a></li>
-    </ul>
+<table>
+ <thead>
+  <tr>
+    <th>Demo</th>
+    <th>Info</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+    <td><a href="colors-toggle.html" title="Colors Toggle">Colors Toggle</a></td>
+    <td><a href="http://stackoverflow.com/q/34507610/478018" title="Checkbox toggle in Chrome and Opera">Checkbox toggle in Chrome and Opera</a></td>
+  </tr>
+  <tr>
+    <td><a href="text-indent.html" title="Text Indent">Text Indent</a></td>
+    <td><a href="https://www.sitepoint.com/community/t/dcode-understanding-css-positioning/231154/39" title="dCode_Understanding CSS Positioning">dCode_Understanding CSS Positioning</a></td>
+  </tr>
+ </tbody>
+</table>
   </main>
   <footer>
-    <address>Created by <a href="https://www.google.com/+MortezaMirmojarabian" title="Google+ profile" rel="author">Mori</a></address>
+<address>Created by <a href="https://plus.google.com/+MortezaMirmojarabian" title="Morteza “Mori” Mirmojarabian - Google+" rel="author">Mori</a></address>
   </footer>
 </body>
 
