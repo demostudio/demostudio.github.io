@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Countdown Timer - Demo Studio</title>
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      font-size: 128px;
+      color: aqua;
+      background: black;
+    }
+
+    #box {
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+      margin: 1em auto;
+      outline: 1px dashed;
+      text-align: center;
+      line-height: 1em;
+      animation: fade 1s linear 5s forwards;
+    }
+
+    #numbers {
+      animation: countdown 6s steps(6);
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes countdown {
+      from {
+        margin-top: 0;
+      }
+      to {
+        margin-top: -6em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div id="numbers">5 4 3 2 1 0</div>
+  </div>
+</body>
+
+</html>
