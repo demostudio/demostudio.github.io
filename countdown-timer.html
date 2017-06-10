@@ -20,20 +20,20 @@
       outline: 1px dashed aqua;
       text-align: center;
       line-height: 1em;
-      animation: fade 1s linear 9s forwards;
+      animation: fadeOut 1s linear 9s forwards;
     }
 
     #numbers {
-      animation: countdown 10s steps(10);
+      animation: countDown 10s steps(10);
     }
 
-    @keyframes fade {
+    @keyframes fadeOut {
       to {
         opacity: 0;
       }
     }
 
-    @keyframes countdown {
+    @keyframes countDown {
       to {
         margin-top: -10em;
       }
