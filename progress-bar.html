@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Progress Bar - Demo Studio</title>
+  <link rel="icon" href="favicon.ico">
+  <style>
+    div.wrap {
+      width: 10em;
+      margin-bottom: 0.5em;
+      background: #ccc;
+    }
+
+    div.bar {
+      width: 0;
+      height: 1em;
+      background: green;
+      transition: all 0.5s linear;
+    }
+
+    div.bar.progress {
+      width: 75%;
+      background: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="bar"></div>
+  </div>
+  <button>Go</button>
+
+  <script>
+    document.querySelector('button').addEventListener('click', function() {
+      document.querySelector('div.bar').classList.add('progress');
+    });
+  </script>
+</body>
+
+</html>
